@@ -1,0 +1,15 @@
+<?php
+$navbars = StaticVariable::$navbarPengurusHarian;
+?>
+@extends('layouts.home5')
+
+@section('style', asset('css/style/pendeta.css'))
+@section('title', 'Kelola Keuangan Non-Aktif')
+@section('page_name', 'Kelola Keuangan Non-Aktif')
+@section('navbar_content')
+
+@endsection
+@section('content')
+    @include('components.datakeuangannonaktif')
+    @include('sweetalert::alert')
+@endsection

@@ -1,0 +1,17 @@
+<?php
+$navbars = StaticVariable::$navbarPengurusHarian;
+?>
+@extends('layouts.home5')
+
+@section('style', asset('css/style/pendeta.css'))
+@section('title', 'Data Jemaat')
+@section('page_name', 'Data Jemaat')
+@section('navbar_content')
+    <div class="col-4 ms-auto">
+        <input type="text" class="form-control" name="" id="">
+    </div>
+@endsection
+@section('content')
+    @include('components.datajemaattidakaktif')
+    @include('sweetalert::alert')
+@endsection
